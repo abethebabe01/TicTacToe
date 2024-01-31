@@ -42,7 +42,7 @@ class TicTacToe
             PrintBoard();
 
             //Check if the game is over because of a win or a tie
-            if (CheckForWin())
+            if (CheckForWin(currentPlayer, gameOver))
             {
                 Console.WriteLine("Player " + currentPlayer + " wins!");
                 gameOver = true;
